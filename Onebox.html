@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onebox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="onebox-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Inbox</h2>
+                <button id="dark-mode-toggle" class="btn-toggle">Dark Mode</button>
+            </div>
+            <ul id="folder-list">
+                <li>Inbox</li>
+                <li>Sent</li>
+                <li>Drafts</li>
+                <li>Trash</li>
+            </ul>
+        </aside>
+        <main class="email-section">
+            <div id="email-list" class="email-list">
+                <!-- Emails will be populated here -->
+            </div>
+            <div id="email-content" class="email-content">
+                <p>Select an email to view the content</p>
+            </div>
+            <button id="reply-button" class="btn-reply">Reply</button>
+            <div id="reply-box" class="hidden">
+                <textarea id="reply-text" placeholder="Type your reply..."></textarea>
+                <button id="send-reply" class="btn-primary">Send</button>
+            </div>
+        </main>
+    </div>
+    <script src="onebox.js"></script>
+</body>
+</html>
